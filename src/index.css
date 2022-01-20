@@ -37,7 +37,7 @@ body {
   }
 
   .notes {
-    @apply p-0 h-[60vh] sm:h-96 overflow-y-auto w-full sm:p-2;
+    @apply h-[60vh] sm:h-96 overflow-y-auto w-full p-3;
   }
 
   .note {
