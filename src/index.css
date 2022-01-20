@@ -41,7 +41,7 @@ body {
   }
 
   .note {
-    @apply w-full bg-indigo-100 sm:w-11/12 p-2 px-4 rounded-xl cursor-pointer transition-all duration-200 ring-2 ring-indigo-100 hover:ring-indigo-200 flex items-center justify-between sm:my-5;
+    @apply w-full bg-indigo-100 sm:w-11/12 p-2 px-4 rounded-xl cursor-pointer transition-all duration-200 ring-2 ring-indigo-100 hover:ring-indigo-200 flex items-center justify-between my-5;
   }
 
   .note-container {
