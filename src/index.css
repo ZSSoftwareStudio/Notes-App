@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+@layer components {
+  .row {
+    @apply mt-5 sm:mt-0 w-full sm:w-11/12 mx-auto flex px-5 sm:py-10 md:flex-row flex-col justify-center items-center;
+  }
+
+  .left-col {
+    @apply w-full lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-start;
+  }
+
+  .right-col {
+    @apply lg:max-w-lg lg:w-full md:w-1/3 w-5/6;
+  }
+
+  .fancy-heading {
+    @apply sm:text-4xl text-3xl mb-2 font-bold bg-gradient-to-r text-transparent bg-clip-text from-indigo-500 to-purple-500;
+  }
+
+  .input-label {
+    @apply uppercase text-sm text-gray-600 font-semibold;
+  }
+
+  .input {
+    @apply w-full bg-gray-200 text-gray-900 mt-2 py-2 px-3 rounded-lg;
+  }
+
+  .btn {
+    @apply uppercase text-sm font-bold tracking-wide bg-gradient-to-r from-indigo-500 to-purple-500 text-gray-100 py-3 px-6 rounded-2xl transition-all duration-300 hover:scale-90;
+  }
+
+  .notes {
+    @apply p-0 h-[60vh] sm:h-96 overflow-y-auto w-full sm:p-2;
+  }
+
+  .note {
+    @apply w-full bg-indigo-100 sm:w-11/12 p-2 px-4 rounded-xl cursor-pointer transition-all duration-200 ring-2 ring-indigo-100 hover:ring-indigo-200 flex items-center justify-between sm:my-5;
+  }
+
+  .note-container {
+    @apply flex items-center;
+  }
+
+  .notes-icon {
+    @apply hidden sm:inline-block w-8 h-8 mr-6;
+  }
+
+  .notes-title {
+    @apply text-base sm:text-lg font-medium bg-gradient-to-r text-transparent bg-clip-text from-indigo-600 to-purple-600;
+  }
+
+  .icon-add {
+    @apply w-12 h-12 text-indigo-500 transition-all duration-300 cursor-pointer hover:scale-90 sm:mt-4;
+  }
+
+  .notes-delete-icon {
+    @apply hidden sm:inline-flex w-6 h-6 text-red-500 transition-all duration-300 cursor-pointer hover:scale-90;
+  }
+
+  .notes-close-icon {
+    @apply hidden sm:inline-flex w-6 h-6 text-blue-500 transition-all duration-300 cursor-pointer hover:scale-90;
+  }
+
+  .animated-image {
+    animation: animated-image 7s linear infinite alternate-reverse;
+  }
+
+  @keyframes animated-image {
+    0% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+}
